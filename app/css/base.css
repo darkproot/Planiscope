@@ -1,0 +1,73 @@
+:root {
+    --base: #2a2a2a;
+    --label: green;
+    --reduce: #28cd41;
+    --reduce-hover: #24d138;
+    --zoom: #ffbe30;
+    --zoom-hover: #ffa116;
+    --destroy: #ff3b30;
+    --destroy-hover: #ff6258;
+    --desactivated: #505050;
+}
+
+@font-face {
+    font-family: 'texte';
+    src: url('../../assets/fonts/WorkSans-Medium.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: texte, sans-serif;
+    /* border-sizing: border-box; */
+    /* border: 2px solid red; */
+}
+
+header {
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    height: 30px;
+    display: flex;
+    position: fixed;
+    background: var(--base);
+}
+
+header label {
+    width: 100%;
+    font-size: 1.2rem;
+    color: white;
+    line-height: 30px;
+    font-weight: lighter;
+    margin-left: 10px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 30px
+}
+
+header ul li {
+    border-radius: 20px;
+    padding: 8px;
+    margin: 7px 0;
+    transition: all .2s ease;
+    cursor: pointer;
+}
+
+body {
+    ::-webkit-scrollbar { display: none;}
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+#__reduce {background-color: var(--reduce);}
+#__reduce:hover {background-color: var(--reduce-hover); transform: scale(1.2);}
+#__zoom {background-color: var(--zoom);}
+#__zoom:hover {background-color: var(--zoom-hover); transform: scale(1.2);}
+#__destroy {
+    background-color: var(--destroy);
+    margin-right: 20px;
+}
+#__destroy:hover {background-color: var(--destroy-hover); transform: scale(1.2);}

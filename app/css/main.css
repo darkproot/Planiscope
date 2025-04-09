@@ -1,0 +1,84 @@
+:root {
+    --green-1: #01A863;
+    --green-2: #01B36D;
+    --base-main: #EDF2EE;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+    grid-area: "navbar display";
+    min-height: calc(100vh - 30px);
+    margin-top: 30px;
+}
+
+/* NavBar */
+aside {
+    background: var(--green-1);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.481);
+    padding: 0 20px;
+}
+
+aside .navbar-element-container { 
+    padding-left: 10px;
+    border-radius: 20px;
+    padding: 10px 0;
+    padding-left: 20px;
+    background-color: var(--green-2);
+    transition: all .2s ease;
+    border: 2px solid var(--green-2);
+}
+
+aside .navbar-element-container p {
+    transition: all .2s ease;
+}
+
+aside .navbar-element-container:hover {
+    color: white;
+    cursor: pointer;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.351);
+    border: 2px solid gold;
+}
+
+.navbar-element-selected { 
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.351);
+    color: white; 
+}
+
+/* Display Zone */
+.display {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-area: "display-1" "display-2";
+    background: var(--base-main);
+    padding: 20px;
+    gap: 20px;
+}
+
+#display-1 {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+    background-color: var(--base-main);
+}
+
+#display-2 {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+    background-color: var(--base-main);
+}
+
+.display div {
+    background-color: white;
+    border-radius: 20px;
+}

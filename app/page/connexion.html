@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/connexion.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <title>To-do-list</title>
+</head>
+<body>
+    <header>
+        <label for="title-of-the-page">To-do-List</label>
+        <ul>
+            <li id="__reduce"></li>
+            <li id="__zoom"></li>
+            <li id="__destroy"></li>
+        </ul>
+    </header>
+    <main>
+        <div class="container">
+            <!-- Photo de Profile -->
+            <div class="image-container">
+                <img src="../../assets/images/profiles/redjohn.jpg" alt="Photo de profile">
+            </div>
+
+            <!-- Choix du mode de connexion -->
+            <div class="entry-mode">
+                <label for="Login" id="login-btn">Login</label>
+                <label for="Sign-Up" id="sign-up-btn">Sign-Up</label>
+            </div>
+            
+            <!-- Login Part -->
+            <div id="login-part">
+                <!-- Information Zone -->
+                <div class="info">
+                    <p id="pseudo-label">Pseudo</p>
+                    <input type="text" name="pseudo" id="pseudo">
+
+                    <p id="password-label">Mot de passe</p>
+                    <input type="text" name="mot-de-passe" id="password">
+                </div>
+
+                <!-- Action Zone -->
+                <div class="action-zone">
+                    <button id="login">Login</button>
+                    <label for="revill-password">Mot de pass oublie</label>
+                </div>
+            </div>
+
+            <!-- Sign-up Part -->
+            <div class="hide" id="sign-up-part">
+                <!-- Information Zone -->
+                <div class="info">
+                    <p id="pseudo-label">Pseudo</p>
+                    <input type="text" name="pseudo" id="pseudo-s">
+
+                    <p id="password-label">Mot de passe</p>
+                    <input type="text" name="mot-de-passe" id="password-s">
+                    
+                    <p id="indice-password-label">Indice mot de passe</p>
+                    <input type="text" name="indice" id="indice">
+                </div>
+
+                <!-- Action Zone -->
+                <div class="action-zone">
+                    <button id="sign-up">Sign-Up</button>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+    <script src="../javascripts/connexion.js"></script>
+    <script src="../javascripts/base.js"></script>
+</body>
+</html>

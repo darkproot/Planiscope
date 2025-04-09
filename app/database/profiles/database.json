@@ -1,0 +1,17 @@
+{
+    "users": [
+        {
+            "pseudo": "admin",
+            "password": "qwerty",
+            "pic": "redjohn.jpg",
+            "help": "admin"
+        },
+
+        {
+            "pseudo": "elie",
+            "password": "azerty",
+            "pic": "python.png",
+            "help": "Clavier Francais"
+        }
+    ]
+}
