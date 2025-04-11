@@ -79,6 +79,88 @@ aside .navbar-element-container:hover {
 }
 
 .display div {
-    background-color: white;
-    border-radius: 20px;
+    background-color: var(--base-main);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Profile */
+#profile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.15),
+    -5px -5px 10px rgba(255, 255, 255, 0.75);
+}
+
+#profile-container p {
+    font-size: 3rem;
+    color: var(--green-1);
+    font-weight: bolder;
+}
+
+#profile-container .profile-description {
+    height: 50px;
+    font-size: 1.5rem;
+}
+
+#profile-container .profile-description span {
+    background: tomato;
+    margin-left: 10px;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    animation: steak 2s infinite;
+}
+
+#profile-container .image-container {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid var(--green-1);
+}
+
+#profile-container .image-containe img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes steak {
+    0% { transform: scale(1.09); }
+    50% { transform: scale(1.1); }
+    75% { transform: scale(1.2); }
+    100% { transform: scale(1.1);; }
+}
+
+
+/* Sommary */
+#sommary-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 1fr 1fr;
+    gap: 15px;
+    background-color: var(--base-main);
+}
+
+#sommary-container div {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.15),
+    -5px -5px 10px rgba(255, 255, 255, 0.75);
+}
+
+
+/* Graphe */
+#graph-container {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.15),
+    -5px -5px 10px rgba(255, 255, 255, 0.75);
+}
+
+/* Calender */
+#calender-container {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.15),
+    -5px -5px 10px rgba(255, 255, 255, 0.75);
 }

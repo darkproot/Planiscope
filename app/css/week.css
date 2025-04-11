@@ -1,0 +1,232 @@
+:root {
+    --green-1: #01A863;
+    --green-2: #01B36D;
+    --base-main: #EDF2EE;
+    --card: lightgreen;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+    grid-area: "navbar display";
+    min-height: calc(100vh - 30px);
+    margin-top: 30px;
+}
+
+/* NavBar */
+aside {
+    background: var(--green-1);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.481);
+    padding: 0 20px;
+}
+
+aside .navbar-element-container { 
+    padding-left: 10px;
+    border-radius: 20px;
+    padding: 10px 0;
+    padding-left: 20px;
+    background-color: var(--green-2);
+    transition: all .2s ease;
+    border: 2px solid var(--green-2);
+}
+
+aside .navbar-element-container p {
+    transition: all .2s ease;
+}
+
+aside .navbar-element-container:hover {
+    color: white;
+    cursor: pointer;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.351);
+    border: 2px solid gold;
+}
+
+.navbar-element-selected { 
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.351);
+    color: white; 
+}
+
+/* Display Zone */
+.display {
+    display: flex;
+    flex-direction: column;
+    background: var(--base-main);
+    gap: 20px;
+    padding: 20px;
+}
+
+
+/* Head  */
+.head-container {
+    display: grid;
+    grid-template-columns: 40px 80% 1fr;
+    grid-row: 1fr;
+    height: 40px;
+    gap: 20px;
+}
+
+.image-container {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#search-bar {
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.12);
+    outline: none;
+    padding-left: 20px;
+}
+
+#search {
+    border: none;
+    background-color: var(--green-2);
+    border-radius: 20px;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+    padding: 5px;
+}
+
+
+/* Text Area */
+.text-zone { 
+    width: 100%; 
+    display: flex;
+    gap: 20px;
+}
+
+.text-zone p {
+    font-size: xx-large;
+    font-weight: bold;
+    width: 100%;
+}
+
+#new_btn {
+    border: none;
+    background-color: var(--green-2);
+    border-radius: 15px;
+    color: white;
+    font-size: large;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Goal Display */
+.goal-display {
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.38);
+    backdrop-filter: blur(5px);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.12);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 20px;
+}
+
+
+/* Card */
+.card {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.12);
+    padding: 10px 20px;
+    border-radius: 10px;
+    border-left: 5px solid var(--card);
+    display: flex;
+    background: white;
+}
+
+.description-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    font-family: texte, sans-serif;
+}
+
+.periode {
+    font-size: 1.1rem;
+    font-family: texte-light, sans-serif;
+    font-size: small;
+}
+
+.periode span {
+    color: rgba(0, 0, 0, 0.359);
+    font-family: texte-light, sans-serif;
+}
+
+.description-card-plus {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.description-card-plus label {
+    padding: 5px 30px;
+    background: var(--card);
+    border-radius: 20px;
+    color: white;
+    font-size: small;
+}
+
+.description-card-plus button {
+    border: 1px solid tomato;
+    border-radius: 30px;
+    padding: 10px 0;
+    background: transparent;
+    color: tomato;
+    transition: all .2s ease;
+    cursor: pointer;
+    width: 100px;
+}
+
+.description-card-plus button:hover {
+    color: white;
+    background-color: tomato;
+}
+
+.delete_btn_container {
+    display: flex;
+    justify-content: end;
+}
+
+.progression-container {
+    height: 5px;
+    border: 2px solid var(--card);
+    border-radius: 30px;
+    width: 20%;
+    position: relative;
+    overflow: hidden;
+}
+
+.progression-container::before {
+    position: absolute;
+    content: '';
+    width: 75%;
+    border-radius: 0 30px 30px 0;
+    height: 100%;
+    background: var(--card);
+    top: 0;
+    left: 0;
+}

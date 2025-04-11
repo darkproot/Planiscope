@@ -3,6 +3,7 @@ const path = require('path');
 const fs = require('fs');
 
 let mainWindow;
+let isFullScreen = false;
 
 function mainLoop() {
     mainWindow = new BrowserWindow({
@@ -10,7 +11,8 @@ function mainLoop() {
         height: 700,
         resizable: true,
         maximizable: false,
-        fullscreenable: false,
+        fullscreenable: true,
+        center: true,
         frame: false,
         webPreferences: {
             preload: path.join(__dirname, 'preload.js'),
@@ -26,6 +28,15 @@ function mainLoop() {
 
 ipcMain.on('close-window', () => {
     if (mainWindow) mainWindow.close();
+});
+ipcMain.on('minimize-window', () => {
+    if (mainWindow) mainWindow.minimize();
+});
+ipcMain.on('zoom-window', () => {
+    if (mainWindow) {
+        isFullScreen = !isFullScreen;
+        mainWindow.setFullScreen(isFullScreen);
+    };
 });
 
 ipcMain.handle('readFile', async (_, chemin) => {

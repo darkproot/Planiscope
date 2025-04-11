@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/week.css">
+    <title>Planiscope</title>
+</head>
+<body>
+    <header>
+        <label for="title-of-the-page">Planiscope</label>
+        <ul>
+            <li id="__reduce"></li>
+            <li id="__zoom"></li>
+            <li id="__destroy"></li>
+        </ul>
+    </header>
+    <main>
+        
+        <!-- NavBar -->
+        <aside>
+            <div class="navbar-element-container" id="dashbord-section">
+                <p>Dashbord</p>
+            </div>
+            <div class="navbar-element-container navbar-element-selected">
+                <p>Week</p>
+            </div>
+            <div class="navbar-element-container">
+                <p>Day</p>
+            </div>
+            <div class="navbar-element-container">
+                <p>Settings</p>
+            </div>
+            <div class="navbar-element-container">
+                <p>Dev info</p>
+            </div>
+        </aside>
+
+
+        <!-- Display Zone -->
+        <div class="display">
+            <!-- Head -->
+            <div class="head-container">
+                <div class="image-container">
+                    <img src="/assets/images/profiles/default_profile.jpg" alt="Photo de profiles">
+                </div>
+                <input type="search" name="search" id="search-bar" placeholder="Search">
+                <button id="search">🔎 Search</button>
+            </div>
+
+            <!-- Text Area -->
+            <div class="text-zone">
+                <p>Objectifs</p>
+                <button id="new_btn">Nouveau</button>
+            </div>
+
+            <!-- Goal Display -->
+            <div class="goal-display">
+                <!-- Default card -->
+                <div class="card">
+                    <div class="description-card">
+                        <label for="title" class="title">Titre</label>
+                        <label for="periode" class="periode">Nombre de fois: <span>07</span></label>
+                        <label for="periode" class="periode">Date d'enregistrement: <span>03/12/2025</span></label>
+                        <label for="periode" class="periode">Durre d'execution: <span>30 min</span></label>
+                        <div class="progression-container"></div>
+                    </div>
+                    <div class="description-card-plus">
+                        <label for="domaine">Domaine</label>
+                        <div class="delete_btn_container"><button class="delete">Delete</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="../javascripts/base.js"></script>
+    <script src="../javascripts/week.js"></script>
+</body>
+</html>

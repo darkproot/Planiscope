@@ -15,6 +15,11 @@
     src: url('../../assets/fonts/WorkSans-Medium.ttf');
 }
 
+@font-face {
+    font-family: 'texte-light';
+    src: url('../../assets/fonts/WorkSans-Light.ttf');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -40,6 +45,7 @@ header label {
     line-height: 30px;
     font-weight: lighter;
     margin-left: 10px;
+    -webkit-app-region: drag;
 }
 
 header ul {

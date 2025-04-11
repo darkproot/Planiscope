@@ -86,7 +86,8 @@ function sign_up_(pseudo, password, indice) {
         if (idx > -1) { console.log("⚠Compte indisponible⚠"); }
         else { 
             USER.pseudo = pseudo;
-            USER.pic = "default_profile.jpg"
+            USER.pic = "default_profile.jpg";
+            USER.steak = '00';
             window.sessionStorage.setItem('user', JSON.stringify(USER));
             console.log("✔Enregistrement✔"); 
             window.location.href = "../page/welcome.html";
@@ -115,7 +116,14 @@ function login_(pseudo, password) {
 
         if (idx > -1) {
             updateProfile(USERS[idx].pic);
-            if (password == USERS[idx].password) { console.log("✔Comfirmation✔"); }
+            if (password == USERS[idx].password) {
+                USER.pseudo = USERS[idx].pseudo;
+                USER.pic = USERS[idx].pic;
+                USER.steak = USERS[idx].steak < 10? `0${USERS[idx].steak}`: `${USERS[idx].steak}`;
+                window.sessionStorage.setItem('user', JSON.stringify(USER));
+                console.log("✔Comfirmation✔"); 
+                window.location.href = "../page/main.html";
+            }
             else { console.log('❌Mot de passe incorrect!❌'); }
         } else { console.log("❌Compte indisponible!❌"); }
     });

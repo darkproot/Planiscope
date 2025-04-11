@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/main.css">
-    <title>TO-DO-LIST</title>
+    <title>Planiscope</title>
 </head>
 <body>
     <header>
-        <label for="title-of-the-page">To-do-List</label>
+        <label for="title-of-the-page">Planiscope</label>
         <ul>
             <li id="__reduce"></li>
             <li id="__zoom"></li>
@@ -23,7 +23,7 @@
             <div class="navbar-element-container navbar-element-selected">
                 <p>Dashbord</p>
             </div>
-            <div class="navbar-element-container">
+            <div class="navbar-element-container" id="week-section">
                 <p>Week</p>
             </div>
             <div class="navbar-element-container">
@@ -41,8 +41,21 @@
         <!-- Display Zone -->
         <div class="display">
             <div id="display-1">
-                <div id="profile-container">Profile</div>
-                <div id="sommary-container">Sommaraire</div>
+                <div id="profile-container">
+                    <div class="image-container" id="image-container">
+                        <img src="../../assets/images/profiles/python.png" alt="photo de profile">
+                    </div>
+                    <p>Pseudo</p>
+                    <div class="profile-description">Steak<span id="steak"> 03</span></div>
+                </div>
+                <div id="sommary-container">
+                    <div class="sommary-week">sommary 1</div>
+                    <div class="sommary-week">sommary 2</div>
+                    <div class="sommary-week">sommary 3</div>
+                    <div class="sommary-day">Day 1</div>
+                    <div class="sommary-day">Day 2</div>
+                    <div class="sommary-day">Day 3</div>
+                </div>
             </div>
             <div id="display-2">
                 <div id="graph-container">Graphe</div>

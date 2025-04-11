@@ -4,14 +4,16 @@
             "pseudo": "admin",
             "password": "qwerty",
             "pic": "redjohn.jpg",
-            "help": "admin"
+            "help": "admin",
+            "steak": 4
         },
-
+        
         {
             "pseudo": "elie",
             "password": "azerty",
             "pic": "python.png",
-            "help": "Clavier Francais"
+            "help": "Clavier Francais",
+            "steak": 45
         }
     ]
 }

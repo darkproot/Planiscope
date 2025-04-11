@@ -21,7 +21,7 @@ main {
     position: relative;
     padding: 30px;
     min-width: 300px;
-    box-shadow: 10px 40px 30px rgba(0, 0, 0, 0.127);
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.411);
     transition: all .3s ease;
     border: 2px solid goldenrod;
 }
