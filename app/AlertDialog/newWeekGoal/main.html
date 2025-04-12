@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="../base.css">
+    <title>New goal</title>
+</head>
+<body>
+    <header>
+        <label for="title-of-the-page">Nouvel Objectif</label>
+        <ul>
+            <li id="__destroy"></li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="container">
+            <p class="label" id="title-label">Titre</p>
+            <input type="text" name="title" id="title" class="input">
+            <p class="label">Domaine</p>
+            <div class="domaine-container">
+                <select name="Domaine" id="domaine">
+                    <option value="ecole">Ecole</option>
+                    <option value="sport">Sport</option>
+                </select>
+                <button id="new-domaine">Nouveau</button>
+            </div>
+
+            <!-- Emploi de temps -->
+            <p class="label">Emploi de temps</p>
+            <div class="display">
+                <!-- Card -->
+                <div class="card">
+                    <p>Lundi</p>
+                    <div class="card-action">
+                        <input type="time" name="time">
+                        <input type="text" name="nom">
+                        <input type="button" value="Add">
+                    </div>
+                    <div class="card-display"></div>
+                </div>
+
+                <div class="card">
+                    <p>Mardi</p>
+                    <div class="card-action">
+                        <input type="time" name="time">
+                        <input type="text" name="nom">
+                        <input type="button" value="Add">
+                    </div>
+                    <div class="card-display"></div>
+                </div>
+
+                <div class="card">
+                    <p>Mercredi</p>
+                    <div class="card-action">
+                        <input type="time" name="time">
+                        <input type="text" name="nom">
+                        <input type="button" value="Add">
+                    </div>
+                    <div class="card-display"></div>
+                </div>
+
+                <div class="card">
+                    <p>Jeudi</p>
+                    <div class="card-action">
+                        <input type="time" name="time">
+                        <input type="text" name="nom">
+                        <input type="button" value="Add">
+                    </div>
+                    <div class="card-display"></div>
+                </div>
+
+                <div class="card">
+                    <p>Vendredi</p>
+                    <div class="card-action">
+                        <input type="time" name="time">
+                        <input type="text" name="nom">
+                        <input type="button" value="Add">
+                    </div>
+                    <div class="card-display"></div>
+                </div>
+
+                <div class="card">
+                    <p>Samedi</p>
+                    <div class="card-action">
+                        <input type="time" name="time">
+                        <input type="text" name="nom">
+                        <input type="button" value="Add">
+                    </div>
+                    <div class="card-display"></div>
+                </div>
+
+                <div class="card">
+                    <p>Dimanche</p>
+                    <div class="card-action">
+                        <input type="time" name="time">
+                        <input type="text" name="nom">
+                        <input type="button" value="Add">
+                    </div>
+                    <div class="card-display"></div>
+                </div>
+            </div>
+
+            <!-- Action Zone -->
+            <div class="action-container">
+                <button id="annuler">Annuler</button>
+                <button id="ok">Valider</button>
+            </div>
+        </div>
+    </main>
+    <script src="./main.js"></script>
+    <script src="../base.js"></script>
+</body>
+</html>

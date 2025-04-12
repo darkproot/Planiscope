@@ -1,0 +1,183 @@
+:root {
+    --background: #04C582;
+    --container: #2E3138;
+    --input: #545E6A;
+    --text: #4D5359;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--container);
+    min-height: calc(100vh - 30px);
+    margin-top: 30px;
+}
+
+.container {
+    background-color: var(--container);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25),
+    -5px -5px 15px rgba(255, 255, 255, 0.10);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 70%;
+}
+
+.label {
+    color: var(--text);
+    font-size: 1.2rem;
+}
+
+.input {
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--input);
+    height: 30px;
+    text-align: center;
+    color: white;
+}
+
+.domaine-container {
+    display: flex;
+    gap: 40px;
+}
+
+select {
+    width: 100%;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--input);
+    height: 30px;
+    text-align: center;
+    color: white;
+}
+
+#new-domaine {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    background: var(--background);
+}
+
+#new-domaine:hover {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.514);
+}
+
+
+/* Emploi de temps */
+.display {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    min-height: 300px;
+    /* background: rgba(255, 255, 255, 0.215); */
+    border-radius: 20px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.card {
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.147);
+    padding: 10px;
+    display: flex;
+    backdrop-filter: blur(5px);
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card p {
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    color: white;
+    padding: 10px 0;
+    border-bottom: 2px solid var(--input)
+}
+
+.card-action {
+    display: flex;
+    gap: 10px;
+    padding: 0px 10px;
+}
+
+.card-action input[type="text"] {
+    width: 150px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.card-action input[type="time"] {
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.card-action input[type="button"] {
+    border: none;
+    background: var(--background);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.card-action input[type="button"]:hover {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.465);
+}
+
+.card-display {
+    border: 2px solid rgba(255, 255, 255, 0.274);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* Action Zone */
+.action-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.action-container button {
+    padding: 10px 40px;
+    border-radius: 20px;
+    transition: all .2s ease;
+    cursor: pointer;
+}
+
+#annuler {
+    border: none;
+    background: tomato;
+    color: white;
+}
+
+#annuler:hover {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.623);
+}
+
+#ok {
+    border: 2px solid var(--background);
+    background: transparent;
+    color: var(--background);
+}
+
+#ok:hover {
+    background: var(--background);
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.623);
+}

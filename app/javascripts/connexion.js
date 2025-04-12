@@ -60,17 +60,24 @@ function updateProfile(img) {
     profile_img_container.innerHTML = `<img src="../../assets/images/profiles/${img}" alt="Photo de profile">`;
 }
 
+function Alert(file) {
+    window.electronAPI.newAlert(file);
+}
+
 function sign_up_(pseudo, password, indice) {
     if (!pseudo) {
         console.log('⚠Entrer un pseudo⚠');
+        Alert("need_pseudo");
         return;
     }
     if (!password) {
         console.log('⚠Entrer un mot de passe⚠');
+        Alert("need_pass");
         return;
     }
     if (!indice) {
         console.log('⚠Entrer un indice⚠');
+        Alert("need_indice");
         return;
     }
 
@@ -98,10 +105,12 @@ function sign_up_(pseudo, password, indice) {
 function login_(pseudo, password) {
     if (!pseudo) {
         console.log('⚠Entrer un pseudo⚠');
+        Alert("need_pseudo");
         return;
     }
     if (!password) {
         console.log('⚠Entrer un mot de passe⚠');
+        Alert("need_pass");
         return;
     }
 
@@ -124,7 +133,13 @@ function login_(pseudo, password) {
                 console.log("✔Comfirmation✔"); 
                 window.location.href = "../page/main.html";
             }
-            else { console.log('❌Mot de passe incorrect!❌'); }
-        } else { console.log("❌Compte indisponible!❌"); }
+            else { 
+                console.log('❌Mot de passe incorrect!❌');
+                Alert("wrong_pass"); 
+            }
+        } else { 
+            console.log("❌Compte indisponible!❌"); 
+            Alert("compte_indisponible");
+        }
     });
 }

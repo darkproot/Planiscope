@@ -103,6 +103,10 @@ aside .navbar-element-container:hover {
     padding: 5px;
 }
 
+#search:hover {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.38);
+}
+
 
 /* Text Area */
 .text-zone { 
@@ -125,6 +129,10 @@ aside .navbar-element-container:hover {
     font-size: large;
     padding: 10px 20px;
     cursor: pointer;
+}
+
+#new_btn:hover {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.38);
 }
 
 /* Goal Display */
