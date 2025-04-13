@@ -25,7 +25,13 @@
                     <option value="ecole">Ecole</option>
                     <option value="sport">Sport</option>
                 </select>
-                <button id="new-domaine">Nouveau</button>
+                <button id="new-domaine-btn">Nouveau</button>
+            </div>
+            <!-- New Domain Informations -->
+            <div class="new-domaine-container" id="new-domaine-container">
+                <input type="color" name="color" id="new-color" value="#ffffff">
+                <input type="text" id="new-domaine-text" placeholder="Nom du domaine">
+                <input type="button" value="Valider" id="add-domaine">
             </div>
 
             <!-- Emploi de temps -->
@@ -35,71 +41,78 @@
                 <div class="card">
                     <p>Lundi</p>
                     <div class="card-action">
-                        <input type="time" name="time">
-                        <input type="text" name="nom">
-                        <input type="button" value="Add">
+                        <input type="time" name="time" id="lundi-time-input">
+                        <input type="text" name="nom" id="lundi-text-input">
+                        <input type="button" value="Add" id="lundi-add-button">
                     </div>
-                    <div class="card-display"></div>
+                    <div class="card-display" id="lundi-card-display">
+                        <!-- Default Card-item -->
+                        <div class="card-item">
+                            <input type="time" name="time" disabled>
+                            <p>Apprendre Python</p>
+                            <button>delete</button>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="card">
                     <p>Mardi</p>
                     <div class="card-action">
-                        <input type="time" name="time">
-                        <input type="text" name="nom">
-                        <input type="button" value="Add">
+                        <input type="time" name="time" id="mardi-time-input">
+                        <input type="text" name="nom" id="mardi-text-input">
+                        <input type="button" value="Add" id="mardi-add-button">
                     </div>
-                    <div class="card-display"></div>
+                    <div class="card-display" id="mardi-card-display"></div>
                 </div>
 
                 <div class="card">
                     <p>Mercredi</p>
                     <div class="card-action">
-                        <input type="time" name="time">
-                        <input type="text" name="nom">
-                        <input type="button" value="Add">
+                        <input type="time" name="time" id="mercredi-time-input">
+                        <input type="text" name="nom" id="mercredi-text-input">
+                        <input type="button" value="Add" id="mercredi-add-button">
                     </div>
-                    <div class="card-display"></div>
+                    <div class="card-display" id="mercredi-card-display"></div>
                 </div>
 
                 <div class="card">
                     <p>Jeudi</p>
                     <div class="card-action">
-                        <input type="time" name="time">
-                        <input type="text" name="nom">
-                        <input type="button" value="Add">
+                        <input type="time" name="time" id="jeudi-time-input">
+                        <input type="text" name="nom" id="jeudi-text-input">
+                        <input type="button" value="Add" id="jeudi-add-button">
                     </div>
-                    <div class="card-display"></div>
+                    <div class="card-display" id="jeudi-card-display"></div>
                 </div>
 
                 <div class="card">
                     <p>Vendredi</p>
                     <div class="card-action">
-                        <input type="time" name="time">
-                        <input type="text" name="nom">
-                        <input type="button" value="Add">
+                        <input type="time" name="time" id="vendredi-time-input">
+                        <input type="text" name="nom" id="vendredi-text-input">
+                        <input type="button" value="Add" id="vendredi-add-button">
                     </div>
-                    <div class="card-display"></div>
+                    <div class="card-display" id="vendredi-card-display"></div>
                 </div>
 
                 <div class="card">
                     <p>Samedi</p>
                     <div class="card-action">
-                        <input type="time" name="time">
-                        <input type="text" name="nom">
-                        <input type="button" value="Add">
+                        <input type="time" name="time" id="samedi-time-input">
+                        <input type="text" name="nom" id="samedi-text-input">
+                        <input type="button" value="Add" id="samedi-add-button">
                     </div>
-                    <div class="card-display"></div>
+                    <div class="card-display" id="samedi-card-display"></div>
                 </div>
 
                 <div class="card">
                     <p>Dimanche</p>
                     <div class="card-action">
-                        <input type="time" name="time">
-                        <input type="text" name="nom">
-                        <input type="button" value="Add">
+                        <input type="time" name="time" id="dimanche-time-input">
+                        <input type="text" name="nom" id="dimanche-text-input">
+                        <input type="button" value="Add" id="dimanche-add-button">
                     </div>
-                    <div class="card-display"></div>
+                    <div class="card-display" id="dimanche-card-display"></div>
                 </div>
             </div>
 

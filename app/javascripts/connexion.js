@@ -13,6 +13,7 @@ const help = document.getElementById("indice");
 
 const login_btn = document.getElementById("login");
 const sign_up_btn = document.getElementById("sign-up");
+const help_btn = document.getElementById("help");
 
 const DATABASE = "/app/database/profiles/database.json";
 
@@ -143,3 +144,15 @@ function login_(pseudo, password) {
         }
     });
 }
+
+help_btn.addEventListener('click', () => {
+    window.electronAPI.readJSON(DATABASE).then((res) => {
+        const USERS = res.users;
+        const pseudo_value = pseudo.value;
+
+        USERS.forEach((user) => {
+            if (user.pseudo == pseudo_value) 
+                alert(`HELP: ${user.help}`);
+        });
+    });
+});
